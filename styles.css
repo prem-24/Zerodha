@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* header section  */
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+.logo > a > img {
+  width: 150px;
+
+  height: 30px;
+}
+.logo {
+  display: flex;
+}
+.header {
+  width: 90%;
+  padding: 16px 0;
+  /* background-color: #000000; */
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+.nav {
+  border-bottom: #dcdcdc solid 1px;
+}
+
+.container {
+  width: 100%;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-items {
+  /* background-color: #d0caca; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items ul {
+  display: flex;
+  padding-right: 30px;
+}
+
+.nav-items ul li,
+a {
+  padding: 10px;
+  color: #666666;
+  flex-shrink: 1;
+  font-size: 16px;
+}
+
+.nav-items div > .fa {
+  color: #424242;
+  font-size: 20px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-items ul {
+    display: none;
+  }
+}
+
+/* header section  */
+
+/* hero section */
+.hero > img {
+  /* background-color: #424242; */
+  width: 100%;
+}
+
+.hero {
+  padding: 100px 0px;
+}
+.wraper-hero {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: #424242; */
+}
+.herocontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-font {
+  text-align: center;
+}
+.hero-font h1 {
+  font-size: 44px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #424242;
+}
+
+.hero-font p {
+  font-size: 20px;
+  /* padding: 30px 0px; */
+  color: #666666;
+  padding-top: 20px;
+  padding-bottom: 35px;
+}
+
+.hero-font h1 {
+  font-size: 44px;
+}
+.hero-font .btn {
+  display: inline-block;
+  padding: 16px 22px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-font.btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-font h1 {
+    font-size: 38px;
+  }
+}
+
+/* hero section/// */
+
+.wrapper-stock {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: #497cb2; */
+  /* height: 20px; */
+}
+
+.stock-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stock-col1 {
+  width: 50%;
+  padding: 30px 0px;
+  /* background-color: #424242; */
+  padding: 30px;
+}
+.stock-col1 > img {
+  width: 100%;
+  padding: 100px 0px;
+  /* background-color: #424242; */
+}
+
+/* stock section start */
+
+.wrappingcol {
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto;
+  display: flex; /* Added display flex */
+  flex-direction: column; /* Align children vertically */
+  align-items: start;
+
+  justify-content: center;
+
+  padding-left: 30px;
+}
+
+.wrappingcol h2 {
+  margin-bottom: 20px;
+
+  font-size: 38px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #424242;
+}
+
+.wrappingcol p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #666666;
+  /* padding: 10px; */
+  font-style: normal;
+  font-weight: 100;
+}
+
+.list {
+  display: flex;
+  padding-left: 20px;
+}
+
+.list1,
+.list2 {
+  flex: 1;
+}
+
+.list1 ul,
+.list2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list1 li,
+.list2 li {
+  margin-bottom: 10px;
+  padding-right: 20px;
+  font-size: 16px;
+  color: #666666;
+}
+
+.trust {
+  margin-top: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.trust img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .stock-container {
+    /* background-color: #007bff; */
+  }
+
+  .stock-col1 {
+    /* background-color: #424242; */
+    width: 100%;
+  }
+  .wrappingcol h2,
+  .wrappingcol .list,
+  .wrappingcol p {
+    text-align: center;
+    /* background-color: #406083; */
+    color: #666666; /* Text color */
+    /* padding: 10px; */
+  }
+  .wrappingcol {
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .wrappingcol h2 {
+    color: #424242;
+  }
+
+  .col1 {
+    /* width: 100%; */
+  }
+}
+
+/* stock section end */
+
+/* confident sect ui start */
+
+.wraper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
+.row {
+  /* background-color: #424242; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.col1 {
+  /* background-color: #3f566f; */
+  width: 40%;
+}
+.col1 > h1 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #424242;
+  margin-bottom: 20px;
+}
+.small-cont > h2 {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.small-cont > p {
+  color: #666666;
+  /* padding-top: 28px; */
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2;
+}
+.col2 {
+  /* background-color: #1f2123; */
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.col2 > img {
+  width: 80%;
+}
+
+@media only screen and (max-width: 700px) {
+  .stock-container {
+    /* background-color: #007bff; */
+  }
+
+  .col1 {
+    /* background-color: #424242; */
+    width: 100%;
+  }
+
+  .col2 {
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .stock-container {
+    /* background-color: #007bff; */
+  }
+
+  .col1 {
+    /* background-color: #424242; */
+    width: 100%;
+  }
+
+  .col2 {
+    margin: 0px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .col1 > h1 {
+    margin-top: 50px;
+    font-size: 30px;
+  }
+
+  .col2 {
+    /* background-color: #1f2123; */
+    padding-top: 40px;
+  }
+}
+
+/* confident sect ui end */
+
+.wrapper-pricing {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: #0056b3; */
+}
+.pricing-container {
+  display: flex;
+  flex: wrap;
+  justify-content: start;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.pricing-container > .col1 {
+  /* background-color: #424242; */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* display: flex; */
+}
+
+.pricing-container > .col2 {
+  width: 50%;
+  /* background-color: aqua; */
+}
+
+.pricing-container > .col2 > .col1 {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  padding: 40px 0;
+  border: solid #cccccc 1px;
+
+}
+
+.pricing-container > .col2 > .col1 > h1 {
+  color: #424242;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pricing-container > .col2 > .col2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding: 40px 0;
+  border: solid #cccccc 1px;
+}
+.pricing-container > .col2 > .col2 > h1 {
+  color: #424242;
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pricing-container > .col1 > .btn {
+  display: inline-block;
+  padding: 16px 22px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pricing-container > .col1 > .btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.pricing-container > .col1 > h2 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #424242;
+  margin-bottom: 20px; /* Darker blue color on hover */
+}
+
+.pricing-container > .col1 > p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+
+/* confident sect ui end */
