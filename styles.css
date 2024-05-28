@@ -240,21 +240,19 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
-  .stock-container {
-    /* background-color: #007bff; */
-  }
-
   .stock-col1 {
-    /* background-color: #424242; */
     width: 100%;
+  }
+  .varsity-container {
+    display: flex;
+    flex-direction: column;
   }
   .wrappingcol h2,
   .wrappingcol .list,
   .wrappingcol p {
     text-align: center;
-    /* background-color: #406083; */
-    color: #666666; /* Text color */
-    /* padding: 10px; */
+
+    color: #666666;
   }
   .wrappingcol {
     margin: 0px;
@@ -264,10 +262,6 @@ a {
 
   .wrappingcol h2 {
     color: #424242;
-  }
-
-  .col1 {
-    /* width: 100%; */
   }
 }
 
@@ -280,6 +274,8 @@ a {
   justify-content: center;
   margin: 0 auto;
   width: 90%;
+
+  padding-bottom: 100px;
 }
 .row {
   /* background-color: #424242; */
@@ -332,11 +328,31 @@ a {
     /* background-color: #424242; */
     width: 100%;
   }
-
-  .col2 {
-    margin: 0px;
+  .varsity-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing-container > .col2,
+  .col1 {
     width: 100%;
-    padding: 0px;
+    /* background-color: aqua; */
+  }
+  .pricing-container > .col2 {
+    width: 100%;
+    /* background-color: aqua; */
+  }
+  .pricing-container > .col1 {
+    /* background-color: #424242; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    /* display: flex; */
   }
 }
 
@@ -366,6 +382,8 @@ a {
     padding-top: 40px;
   }
 }
+.wrapper-varsity {
+}
 
 /* confident sect ui end */
 
@@ -375,6 +393,13 @@ a {
   margin: 0 auto;
   width: 90%;
   /* background-color: #0056b3; */
+}
+
+.wrapper-varsity {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
 }
 .pricing-container {
   display: flex;
@@ -386,7 +411,7 @@ a {
 
 .pricing-container > .col1 {
   /* background-color: #424242; */
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -395,7 +420,7 @@ a {
 }
 
 .pricing-container > .col2 {
-  width: 50%;
+  width: 100%;
   /* background-color: aqua; */
 }
 
@@ -405,7 +430,6 @@ a {
   padding: 10px;
   padding: 40px 0;
   border: solid #cccccc 1px;
-
 }
 
 .pricing-container > .col2 > .col1 > h1 {
@@ -471,5 +495,143 @@ a {
   margin-bottom: 30px;
 }
 
-
 /* confident sect ui end */
+
+/* varsity ui */
+
+.wrapper-varsity {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+  /* background-color: #007bff; */
+}
+
+.varsity-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.varsity-container > .col2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+}
+
+.varsity-container > .col2 > .btn {
+  /* display: inline-block; */
+  padding: 16px 22px;
+  background-color: #007bff; /* Blue color */
+  color: #fff; /* White color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  flex-grow: 0; /* Prevent the button from growing */
+  flex-shrink: 0; /* Prevent the button from shrinking */
+}
+.varsity-container > .col2 > .btn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+/* footer */
+footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  gap: 10px;
+}
+
+footer div {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-self: flex-start; */
+  align-items: flex-start;
+  padding-top: 40px;
+  /* padding-bottom: 10px; */
+  color: #666666;
+  font-size: 16px;
+  font-weight: 100;
+  /* line-height: 2; */
+}
+
+.column {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  text-align: left;
+  padding: 0 10px;
+  flex-direction: column;
+  gap: 20px;
+  justify-self: flex-start;
+  align-items: flex-start;
+}
+
+.column h4 {
+  color: #424242;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.column ul {
+  list-style-type: none;
+  padding: 0;
+  padding-left: 50px;
+}
+
+.column ul li {
+  margin-bottom: 5px;
+}
+
+.column ul li a {
+  color: #666666;
+  /* padding-top: 28px; */
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2;
+  text-decoration: none;
+}
+.wrapper-footer {
+  display: flex;
+  justify-content: center;
+
+  background-color: #f8f9fa;
+  /* background-color: #0056b3; */
+}
+@media screen and (max-width: 768px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* varsity */
+
+.col2 > h1 {
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #424242;
+  margin-bottom: 20px;
+}
+
+.col2 > p {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 2;
+  margin-bottom: 30px;
+}
